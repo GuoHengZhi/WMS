@@ -1,0 +1,55 @@
+/* 全局基础样式 */
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  font-size: 13px;
+  color: #303133;
+  background-color: #f0f2f5;
+}
+
+/* ProTable 高亮行（新建单据定位） */
+.pt-row-highlight td { background-color: #fdf6ec !important; }
+.pt-row-highlight td:first-child { box-shadow: inset 3px 0 0 #e6a23c; }
+
+/* 通用页面容器 */
+.page-wrap { padding: 12px; }
+
+/* ProTable 筛选区 */
+.pt-filters .el-form-item { margin-right: 16px; margin-bottom: 10px; }
+.pt-filters .el-select { width: 190px; }
+.pt-filters .el-input { width: 200px; }
+.pt-filters .el-date-editor.el-input,
+.pt-filters .el-date-editor.el-input__wrapper { width: 200px; }
+.pt-filters .el-range-editor.el-input__wrapper { width: 360px; }
+
+/* ProTable 工具条 */
+.pt-toolbar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+
+/* ProTable 分页 */
+.pt-pager { display: flex; justify-content: flex-end; padding: 12px 0 2px; }
+
+/* 时间复合列 */
+.time-comp { text-align: left; font-size: 12px; line-height: 1.7; color: #606266; white-space: nowrap; }
+
+/* 数量正负色 */
+.qty-plus { color: #67c23a; font-weight: 600; }
+.qty-minus { color: #f56c6c; font-weight: 600; }
+.qty-zero { color: #909399; }
+
+/* 产品图片占位 */
+.img-ph {
+  width: 40px; height: 40px; margin: 0 auto; border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 12px; font-weight: 600;
+  background: linear-gradient(135deg, #409eff, #79bbff);
+}
+
+/* 表单页容器 */
+.form-card { max-width: 1080px; }
+.form-title { font-size: 15px; font-weight: 600; margin: 4px 0 16px; color: #303133; }
+.form-section { margin-bottom: 8px; }
+.divider-text { font-weight: 600; color: #409eff; }
+
+/* 银行账户脱敏提示 */
+.mask-tip { color: #909399; font-size: 12px; margin-top: 4px; }
